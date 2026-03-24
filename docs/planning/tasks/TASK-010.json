@@ -1,0 +1,25 @@
+{
+  "id": "TASK-010",
+  "title": "Input System Implementation",
+  "description": "Create input handler: keyboard events, input buffering, direction validation",
+  "feature_ref": "F004",
+  "task_type": "system",
+  "complexity": {
+    "score": 4,
+    "factors": {
+      "files_affected": 2,
+      "estimated_lines": 200,
+      "new_dependencies": 0,
+      "risk_flags": ["event_driven"]
+    }
+  },
+  "dependencies": ["TASK-003"],
+  "acceptance_criteria": [
+    "Arrow keys capture input",
+    "WASD keys capture input",
+    "Cannot reverse direction",
+    "Input is buffered correctly",
+    "80%+ test coverage"
+  ],
+  "suggested_agent": "developer-typescript"
+}

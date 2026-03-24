@@ -1,0 +1,25 @@
+{
+  "id": "TASK-018",
+  "title": "Visual Polish and Styling",
+  "description": "Polish visuals: animations, colors, effects, responsive design, accessibility",
+  "feature_ref": "F002",
+  "task_type": "ui",
+  "complexity": {
+    "score": 4,
+    "factors": {
+      "files_affected": 4,
+      "estimated_lines": 300,
+      "new_dependencies": 0,
+      "risk_flags": []
+    }
+  },
+  "dependencies": ["TASK-012", "TASK-017"],
+  "acceptance_criteria": [
+    "Responsive design works",
+    "Animations smooth",
+    "Colors consistent",
+    "Accessibility standards met",
+    "Works on mobile"
+  ],
+  "suggested_agent": "developer-typescript"
+}

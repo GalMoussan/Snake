@@ -1,0 +1,23 @@
+{
+  "id": "TASK-009",
+  "title": "Food Entity Implementation",
+  "description": "Create Food entity: random spawn, collision geometry, respawn logic",
+  "feature_ref": "F001",
+  "task_type": "entity",
+  "complexity": {
+    "score": 2,
+    "factors": {
+      "files_affected": 2,
+      "estimated_lines": 150,
+      "new_dependencies": 0,
+      "risk_flags": []
+    }
+  },
+  "dependencies": ["TASK-004", "TASK-006"],
+  "acceptance_criteria": [
+    "Food spawns at random grid position",
+    "Cannot spawn on snake",
+    "80%+ test coverage"
+  ],
+  "suggested_agent": "developer-typescript"
+}

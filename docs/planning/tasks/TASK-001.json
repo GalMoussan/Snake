@@ -1,0 +1,24 @@
+{
+  "id": "TASK-001",
+  "title": "Project Setup and Configuration",
+  "description": "Initialize Vite + TypeScript project, configure build tools, testing, linting",
+  "feature_ref": "F001",
+  "task_type": "infrastructure",
+  "complexity": {
+    "score": 2,
+    "factors": {
+      "files_affected": 5,
+      "estimated_lines": 100,
+      "new_dependencies": 6,
+      "risk_flags": []
+    }
+  },
+  "dependencies": [],
+  "acceptance_criteria": [
+    "Vite dev server runs",
+    "TypeScript compiles",
+    "ESLint configured",
+    "Vitest runs"
+  ],
+  "suggested_agent": "developer-typescript"
+}

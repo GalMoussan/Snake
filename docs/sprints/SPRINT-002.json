@@ -1,0 +1,25 @@
+{
+  "id": "SPRINT-002",
+  "name": "Core Game Mechanics",
+  "goal": "Implement all entities, systems, and game logic",
+  "tasks": [
+    "TASK-008",
+    "TASK-009",
+    "TASK-010",
+    "TASK-011",
+    "TASK-012",
+    "TASK-013",
+    "TASK-014"
+  ],
+  "estimated_complexity": 29,
+  "dependencies": {
+    "sprints": [
+      "SPRINT-001"
+    ]
+  },
+  "quality_gates": [
+    "All tests pass",
+    "No type errors",
+    "80%+ coverage"
+  ]
+}

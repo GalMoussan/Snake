@@ -1,0 +1,24 @@
+{
+  "id": "SPRINT-003",
+  "name": "Integration & Polish",
+  "goal": "Integrate all systems, add UI, polish, and test",
+  "tasks": [
+    "TASK-015",
+    "TASK-016",
+    "TASK-017",
+    "TASK-018",
+    "TASK-019",
+    "TASK-020"
+  ],
+  "estimated_complexity": 25,
+  "dependencies": {
+    "sprints": [
+      "SPRINT-002"
+    ]
+  },
+  "quality_gates": [
+    "All tests pass",
+    "E2E tests pass",
+    "Game playable end-to-end"
+  ]
+}

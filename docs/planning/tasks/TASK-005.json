@@ -1,0 +1,23 @@
+{
+  "id": "TASK-005",
+  "title": "Constants Module",
+  "description": "Define game constants: grid size, canvas dimensions, colors, speeds",
+  "feature_ref": "F001",
+  "task_type": "configuration",
+  "complexity": {
+    "score": 1,
+    "factors": {
+      "files_affected": 1,
+      "estimated_lines": 50,
+      "new_dependencies": 0,
+      "risk_flags": []
+    }
+  },
+  "dependencies": ["TASK-003"],
+  "acceptance_criteria": [
+    "All constants defined",
+    "Constants exported properly",
+    "Values match design specs"
+  ],
+  "suggested_agent": "developer-typescript"
+}

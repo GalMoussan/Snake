@@ -1,0 +1,23 @@
+{
+  "id": "TASK-003",
+  "title": "Type Definitions and Interfaces",
+  "description": "Define core TypeScript types and interfaces for game entities and systems",
+  "feature_ref": "F001",
+  "task_type": "infrastructure",
+  "complexity": {
+    "score": 2,
+    "factors": {
+      "files_affected": 1,
+      "estimated_lines": 200,
+      "new_dependencies": 0,
+      "risk_flags": []
+    }
+  },
+  "dependencies": ["TASK-001"],
+  "acceptance_criteria": [
+    "All types exported",
+    "No type errors",
+    "Interfaces well-documented"
+  ],
+  "suggested_agent": "developer-typescript"
+}

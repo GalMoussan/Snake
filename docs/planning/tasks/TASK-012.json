@@ -1,0 +1,25 @@
+{
+  "id": "TASK-012",
+  "title": "Render System Implementation",
+  "description": "Create rendering: snake drawing, food drawing, grid background, visual updates",
+  "feature_ref": "F001",
+  "task_type": "system",
+  "complexity": {
+    "score": 6,
+    "factors": {
+      "files_affected": 2,
+      "estimated_lines": 300,
+      "new_dependencies": 0,
+      "risk_flags": ["performance_critical", "timing_sensitive"]
+    }
+  },
+  "dependencies": ["TASK-002", "TASK-006", "TASK-008", "TASK-009"],
+  "acceptance_criteria": [
+    "Snake renders correctly",
+    "Food renders correctly",
+    "Grid background renders",
+    "60 FPS rendering achieved",
+    "80%+ test coverage"
+  ],
+  "suggested_agent": "developer-typescript"
+}

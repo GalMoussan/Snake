@@ -1,0 +1,23 @@
+{
+  "id": "SPRINT-001",
+  "name": "Foundation & Setup",
+  "goal": "Establish project structure, tooling, and core utilities",
+  "tasks": [
+    "TASK-001",
+    "TASK-002",
+    "TASK-003",
+    "TASK-004",
+    "TASK-005",
+    "TASK-006",
+    "TASK-007"
+  ],
+  "estimated_complexity": 18,
+  "dependencies": {
+    "sprints": []
+  },
+  "quality_gates": [
+    "All tests pass",
+    "No type errors",
+    "Vite build succeeds"
+  ]
+}

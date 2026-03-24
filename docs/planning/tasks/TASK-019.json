@@ -1,0 +1,25 @@
+{
+  "id": "TASK-019",
+  "title": "End-to-End Testing and QA",
+  "description": "Create E2E tests with Playwright: game flow, collision, scoring, state transitions",
+  "feature_ref": "F001",
+  "task_type": "testing",
+  "complexity": {
+    "score": 5,
+    "factors": {
+      "files_affected": 3,
+      "estimated_lines": 400,
+      "new_dependencies": 1,
+      "risk_flags": ["test_infrastructure"]
+    }
+  },
+  "dependencies": ["TASK-015"],
+  "acceptance_criteria": [
+    "E2E test suite created",
+    "All game flows tested",
+    "Tests pass consistently",
+    "80%+ coverage achieved",
+    "CI integration ready"
+  ],
+  "suggested_agent": "developer-typescript"
+}

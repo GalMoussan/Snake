@@ -1,0 +1,24 @@
+{
+  "id": "TASK-013",
+  "title": "Score System Implementation",
+  "description": "Create score tracking: points per food, high score tracking, UI updates",
+  "feature_ref": "F003",
+  "task_type": "system",
+  "complexity": {
+    "score": 3,
+    "factors": {
+      "files_affected": 2,
+      "estimated_lines": 150,
+      "new_dependencies": 0,
+      "risk_flags": []
+    }
+  },
+  "dependencies": ["TASK-003"],
+  "acceptance_criteria": [
+    "Score increments on food eaten",
+    "High score tracked",
+    "Score getters work",
+    "80%+ test coverage"
+  ],
+  "suggested_agent": "developer-typescript"
+}

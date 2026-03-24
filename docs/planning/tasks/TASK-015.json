@@ -1,0 +1,25 @@
+{
+  "id": "TASK-015",
+  "title": "Main Game Controller Integration",
+  "description": "Integrate all systems: coordinate game loop, manage state transitions, orchestrate updates",
+  "feature_ref": "F001",
+  "task_type": "integration",
+  "complexity": {
+    "score": 8,
+    "factors": {
+      "files_affected": 2,
+      "estimated_lines": 300,
+      "new_dependencies": 0,
+      "risk_flags": ["high_complexity", "integration_point"]
+    }
+  },
+  "dependencies": ["TASK-007", "TASK-008", "TASK-009", "TASK-010", "TASK-011", "TASK-012", "TASK-013", "TASK-014"],
+  "acceptance_criteria": [
+    "Game loop runs smoothly",
+    "All systems integrated",
+    "State transitions work",
+    "Game playable end-to-end",
+    "80%+ test coverage"
+  ],
+  "suggested_agent": "developer-typescript"
+}

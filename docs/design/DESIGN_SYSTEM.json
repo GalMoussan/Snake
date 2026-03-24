@@ -1,0 +1,399 @@
+{
+  "version": "1.0.0",
+  "name": "Snake Game Design System",
+  "description": "Comprehensive design tokens and specifications for the Snake Game UI, including colors, typography, spacing, animations, and visual styling guidelines",
+  "metadata": {
+    "created": "2026-03-24",
+    "category": "game",
+    "status": "active"
+  },
+  "colors": {
+    "primary": {
+      "snake_head": {
+        "value": "#4CAF50",
+        "rgb": "rgb(76, 175, 80)",
+        "description": "Head segment of the snake - vibrant green",
+        "usage": "Main snake head rendering"
+      },
+      "snake_body": {
+        "value": "#81C784",
+        "rgb": "rgb(129, 199, 132)",
+        "description": "Body segments of the snake - lighter green",
+        "usage": "Snake body segments after head"
+      },
+      "food": {
+        "value": "#F44336",
+        "rgb": "rgb(244, 67, 54)",
+        "description": "Food pellet color - vibrant red",
+        "usage": "Food entity rendering"
+      },
+      "background": {
+        "value": "#1A1A2E",
+        "rgb": "rgb(26, 26, 46)",
+        "description": "Game canvas background - dark navy",
+        "usage": "Main game board background"
+      }
+    },
+    "ui": {
+      "text_primary": {
+        "value": "#FFFFFF",
+        "rgb": "rgb(255, 255, 255)",
+        "description": "Primary text color - white",
+        "usage": "Score display, titles, main UI text"
+      },
+      "text_secondary": {
+        "value": "#B0B0B0",
+        "rgb": "rgb(176, 176, 176)",
+        "description": "Secondary text color - light gray",
+        "usage": "Instructions, helper text, labels"
+      },
+      "button_primary": {
+        "value": "#4CAF50",
+        "rgb": "rgb(76, 175, 80)",
+        "description": "Primary button background - green",
+        "usage": "Main action buttons (Start, Resume, Restart)"
+      },
+      "button_hover": {
+        "value": "#66BB6A",
+        "rgb": "rgb(102, 187, 106)",
+        "description": "Button hover state - lighter green",
+        "usage": "Button interactive feedback"
+      },
+      "button_active": {
+        "value": "#388E3C",
+        "rgb": "rgb(56, 142, 60)",
+        "description": "Button active/pressed state - darker green",
+        "usage": "Button pressed state feedback"
+      },
+      "button_disabled": {
+        "value": "#757575",
+        "rgb": "rgb(117, 117, 117)",
+        "description": "Disabled button state - gray",
+        "usage": "Disabled buttons (pause when not playing)"
+      },
+      "overlay": {
+        "value": "rgba(0, 0, 0, 0.8)",
+        "description": "Semi-transparent dark overlay",
+        "usage": "Game over and pause screen overlays"
+      },
+      "border": {
+        "value": "#333333",
+        "rgb": "rgb(51, 51, 51)",
+        "description": "UI border color - dark gray",
+        "usage": "Canvas border, UI separators"
+      }
+    },
+    "game": {
+      "grid_lines": {
+        "value": "rgba(255, 255, 255, 0.05)",
+        "description": "Grid overlay lines - subtle white",
+        "usage": "Optional grid visualization on canvas",
+        "optional": true
+      },
+      "wall": {
+        "value": "#333333",
+        "rgb": "rgb(51, 51, 51)",
+        "description": "Wall collision area color",
+        "usage": "Visual boundary indication"
+      },
+      "food_glow": {
+        "value": "rgba(244, 67, 54, 0.6)",
+        "description": "Food glow effect - semi-transparent red",
+        "usage": "Pulse animation glow"
+      }
+    },
+    "status": {
+      "error": {
+        "value": "#F44336",
+        "rgb": "rgb(244, 67, 54)",
+        "description": "Error state color - red",
+        "usage": "Error messages, invalid states"
+      },
+      "success": {
+        "value": "#4CAF50",
+        "rgb": "rgb(76, 175, 80)",
+        "description": "Success state color - green",
+        "usage": "Success messages, confirmation"
+      },
+      "warning": {
+        "value": "#FF9800",
+        "rgb": "rgb(255, 152, 0)",
+        "description": "Warning state color - orange",
+        "usage": "Warning messages, cautions"
+      }
+    }
+  },
+  "typography": {
+    "font_family": {
+      "retro": "'Press Start 2P', 'Courier New', monospace",
+      "fallback": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+      "description": "Retro pixel font for game authenticity, fallback to system fonts"
+    },
+    "sizes": {
+      "title": {
+        "size": "24px",
+        "line_height": "1.2",
+        "weight": 700,
+        "usage": "Game title 'SNAKE', major headings"
+      },
+      "heading": {
+        "size": "20px",
+        "line_height": "1.3",
+        "weight": 700,
+        "usage": "Screen titles (Game Over, Paused)"
+      },
+      "subheading": {
+        "size": "16px",
+        "line_height": "1.4",
+        "weight": 600,
+        "usage": "Score display, section headers"
+      },
+      "body": {
+        "size": "12px",
+        "line_height": "1.5",
+        "weight": 400,
+        "usage": "Instructions, helper text, regular content"
+      },
+      "button": {
+        "size": "14px",
+        "line_height": "1.4",
+        "weight": 600,
+        "usage": "Button labels, UI controls"
+      },
+      "small": {
+        "size": "10px",
+        "line_height": "1.4",
+        "weight": 400,
+        "usage": "Small labels, micro copy"
+      }
+    },
+    "letter_spacing": {
+      "tight": "-0.02em",
+      "normal": "0em",
+      "wide": "0.05em"
+    }
+  },
+  "spacing": {
+    "unit": "8px",
+    "description": "Base spacing unit for all margins and padding",
+    "scale": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px"
+    },
+    "canvas": {
+      "padding": "16px",
+      "description": "Padding around canvas container"
+    },
+    "button": {
+      "padding": "12px 24px",
+      "min_height": "44px",
+      "description": "Button internal padding (minimum touch target size)"
+    },
+    "score_display": {
+      "margin_bottom": "16px",
+      "description": "Space below score display"
+    },
+    "control_gap": {
+      "value": "12px",
+      "description": "Gap between control buttons"
+    }
+  },
+  "grid": {
+    "cell_size": {
+      "value": 20,
+      "unit": "pixels",
+      "description": "Single cell size in the game grid"
+    },
+    "width_cells": {
+      "value": 30,
+      "total_pixels": 600,
+      "description": "Number of cells horizontally"
+    },
+    "height_cells": {
+      "value": 20,
+      "total_pixels": 400,
+      "description": "Number of cells vertically"
+    },
+    "aspect_ratio": "3:2",
+    "total_canvas": {
+      "width": "600px",
+      "height": "400px"
+    },
+    "border_radius": "2px",
+    "description": "Grid system for snake movement and positioning"
+  },
+  "animations": {
+    "food_pulse": {
+      "duration": "0.5s",
+      "easing": "ease-in-out",
+      "iteration": "infinite",
+      "description": "Food pellet pulsing glow effect",
+      "keyframes": {
+        "0%": "opacity: 0.7",
+        "50%": "opacity: 1",
+        "100%": "opacity: 0.7"
+      }
+    },
+    "snake_death": {
+      "duration": "0.3s",
+      "easing": "ease-out",
+      "description": "Snake fade-out on collision",
+      "keyframes": {
+        "0%": "opacity: 1",
+        "100%": "opacity: 0"
+      }
+    },
+    "ui_fade_in": {
+      "duration": "0.2s",
+      "easing": "ease-in",
+      "description": "UI element fade in animation",
+      "keyframes": {
+        "0%": "opacity: 0",
+        "100%": "opacity: 1"
+      }
+    },
+    "ui_fade_out": {
+      "duration": "0.2s",
+      "easing": "ease-out",
+      "description": "UI element fade out animation",
+      "keyframes": {
+        "0%": "opacity: 1",
+        "100%": "opacity: 0"
+      }
+    },
+    "button_press": {
+      "duration": "0.1s",
+      "easing": "ease-out",
+      "description": "Button press feedback animation",
+      "keyframes": {
+        "0%": "transform: scale(1)",
+        "50%": "transform: scale(0.95)",
+        "100%": "transform: scale(1)"
+      }
+    },
+    "score_pop": {
+      "duration": "0.4s",
+      "easing": "ease-out",
+      "description": "Score increase animation",
+      "keyframes": {
+        "0%": "transform: scale(1), opacity: 1",
+        "100%": "transform: scale(1.2), opacity: 0"
+      }
+    }
+  },
+  "shadows": {
+    "sm": "0 1px 2px rgba(0, 0, 0, 0.3)",
+    "md": "0 4px 6px rgba(0, 0, 0, 0.4)",
+    "lg": "0 10px 15px rgba(0, 0, 0, 0.5)",
+    "inner": "inset 0 2px 4px rgba(0, 0, 0, 0.3)"
+  },
+  "borders": {
+    "radius": {
+      "sm": "2px",
+      "md": "4px",
+      "lg": "8px",
+      "full": "50%"
+    },
+    "width": {
+      "thin": "1px",
+      "medium": "2px",
+      "thick": "4px"
+    }
+  },
+  "breakpoints": {
+    "mobile_small": {
+      "max_width": "320px",
+      "description": "Small phones"
+    },
+    "mobile": {
+      "min_width": "320px",
+      "max_width": "640px",
+      "description": "Phones and small devices"
+    },
+    "tablet": {
+      "min_width": "640px",
+      "max_width": "1024px",
+      "description": "Tablets and medium devices"
+    },
+    "desktop": {
+      "min_width": "1024px",
+      "description": "Desktop and large screens"
+    }
+  },
+  "responsive_scaling": {
+    "description": "How canvas scales on different screen sizes",
+    "mobile": {
+      "canvas_width": "100% (min 280px)",
+      "maintain_aspect_ratio": true,
+      "font_scale": 0.9
+    },
+    "tablet": {
+      "canvas_width": "90vw (max 600px)",
+      "maintain_aspect_ratio": true,
+      "font_scale": 1.0
+    },
+    "desktop": {
+      "canvas_width": "600px",
+      "maintain_aspect_ratio": true,
+      "font_scale": 1.0
+    }
+  },
+  "z_index": {
+    "background": 0,
+    "grid_lines": 1,
+    "food": 2,
+    "snake_body": 3,
+    "snake_head": 4,
+    "ui_base": 10,
+    "ui_elements": 15,
+    "overlay": 20,
+    "modal": 30,
+    "tooltip": 40
+  },
+  "accessibility": {
+    "focus_ring": {
+      "color": "#FFFFFF",
+      "width": "2px",
+      "offset": "2px",
+      "style": "solid",
+      "description": "Focus indicator for keyboard navigation"
+    },
+    "contrast_ratios": {
+      "wcag_aa": {
+        "normal_text": "4.5:1",
+        "large_text": "3:1"
+      },
+      "wcag_aaa": {
+        "normal_text": "7:1",
+        "large_text": "4.5:1"
+      }
+    },
+    "reduced_motion": {
+      "description": "Disable animations for users with motion sensitivity",
+      "rules": "Remove animation durations, use opacity over transforms"
+    },
+    "keyboard_navigation": {
+      "arrow_keys": "Snake movement",
+      "wasd_keys": "Snake movement (alternative)",
+      "space": "Start, pause, resume, restart",
+      "p": "Toggle pause",
+      "r": "Reset game",
+      "m": "Toggle mute",
+      "tab": "Focus through buttons"
+    }
+  },
+  "performance": {
+    "render_target_fps": 60,
+    "max_animation_duration": "1s",
+    "gpu_acceleration": true,
+    "description": "Performance targets for smooth gameplay"
+  },
+  "dark_mode": {
+    "default": true,
+    "description": "Game uses dark theme by default for immersion and eye comfort"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "TASK-017",
+  "title": "UI Controls Implementation",
+  "description": "Create UI: start button, pause button, score display, game over screen",
+  "feature_ref": "F002",
+  "task_type": "ui",
+  "complexity": {
+    "score": 4,
+    "factors": {
+      "files_affected": 3,
+      "estimated_lines": 250,
+      "new_dependencies": 0,
+      "risk_flags": ["dom_manipulation"]
+    }
+  },
+  "dependencies": ["TASK-015"],
+  "acceptance_criteria": [
+    "Start button works",
+    "Pause button works",
+    "Score displays correctly",
+    "Game over screen shows",
+    "Responsive layout"
+  ],
+  "suggested_agent": "developer-typescript"
+}

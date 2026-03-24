@@ -1,0 +1,24 @@
+{
+  "id": "TASK-020",
+  "title": "Documentation and Deployment Preparation",
+  "description": "Create README, API docs, deployment guide, final testing and optimization",
+  "feature_ref": "F001",
+  "task_type": "documentation",
+  "complexity": {
+    "score": 2,
+    "factors": {
+      "files_affected": 4,
+      "estimated_lines": 300,
+      "new_dependencies": 0,
+      "risk_flags": []
+    }
+  },
+  "dependencies": ["TASK-019"],
+  "acceptance_criteria": [
+    "README complete",
+    "API documented",
+    "Build instructions clear",
+    "Deployment process documented"
+  ],
+  "suggested_agent": "developer-typescript"
+}

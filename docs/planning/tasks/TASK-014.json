@@ -1,0 +1,24 @@
+{
+  "id": "TASK-014",
+  "title": "Game State Manager Implementation",
+  "description": "Create state machine: IDLE, PLAYING, PAUSED, GAME_OVER states and transitions",
+  "feature_ref": "F002",
+  "task_type": "system",
+  "complexity": {
+    "score": 4,
+    "factors": {
+      "files_affected": 2,
+      "estimated_lines": 200,
+      "new_dependencies": 0,
+      "risk_flags": ["state_management"]
+    }
+  },
+  "dependencies": ["TASK-003"],
+  "acceptance_criteria": [
+    "State transitions work",
+    "State getters available",
+    "Invalid transitions blocked",
+    "80%+ test coverage"
+  ],
+  "suggested_agent": "developer-typescript"
+}
